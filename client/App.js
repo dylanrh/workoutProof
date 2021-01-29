@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState } from "react";
+// import ReactDom from 'react-dom'
 
 function App() {
+  // workout name
+  const [workout, setWorkout] = useState("");
+  // workout img
+  const [image, setImage] = useState("");
+  // number of excercies
+  const [number, setNumber] = useState(0);
+  // workout description
+  const [description, setDescription] = useState("");
+  // next - functianality - page reload with new content
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header"></header>
     </div>
   );
 }
