@@ -15,11 +15,11 @@ function App() {
   // next - functianality - page reload with new content
   return (
     <div className="App">
-      <h1>{workout}</h1>
+      {/* <h1>{workout}</h1> */}
       {/* <Picture />
       <About /> */}
 
-      <button id="next">NEXT</button>
+      {/* <button id="next">NEXT</button> */}
     </div>
   );
 }
