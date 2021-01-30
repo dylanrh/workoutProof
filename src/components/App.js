@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import "../App.css";
 import React, { useState } from "react";
+import Exercise from "./Exercise";
 // import ReactDom from 'react-dom'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       {/* <h1>{workout}</h1> */}
       {/* <Picture />
       <About /> */}
-
+      <Exercise />
       {/* <button id="next">NEXT</button> */}
     </div>
   );
