@@ -10,7 +10,7 @@ function Exercise() {
   // workout description
   let [description, setDescription] = useState("");
   //workout array
-  const [exerciseArray, setExerciseArray] = useState({});
+  const [exerciseArray, setExerciseArray] = useState([]);
   // key = exercise # or _id value
   // next - functianality - page reload with new content
 
