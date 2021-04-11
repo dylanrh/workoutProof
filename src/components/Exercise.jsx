@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pic8 from "../assets/img_8.JPG";
+import "../sass/main.scss";
 
 function Exercise() {
   // workout name
