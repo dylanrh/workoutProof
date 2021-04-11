@@ -1,5 +1,5 @@
 // import logo from "./logo.svg";
-import "../App.css";
+import "../sass/main.scss";
 import React, { useState } from "react";
 import Exercise from "./Exercise";
 // import ReactDom from 'react-dom'
