@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import pic8 from "../assets/img_8.JPG";
 
 function Exercise() {
   // workout name
@@ -18,6 +19,10 @@ function Exercise() {
   // onload set state (useState)
   // newExercise(e === onload) called three times
   const newExercise = (e) => {
+    setWorkout((workout = "Burpees"));
+    setReps((reps = 25));
+    setDescription((description = "Jump up jump up and get down!"));
+    setPicture((picture = pic8));
     // on click would check length of array, shift 0th exercise off array and push new random on, return shifted exercise as new exercise
     // after length > some numbber 3 5 w/e
     // select random number between 0 and database.length
@@ -28,15 +33,10 @@ function Exercise() {
   return (
     <div>
       <h1 className="workout-name">{workout}</h1>
-      {/* <img className="picture" alt={workout}>
-        {picture}
-      </img> */}
+      <img className="picture" alt={workout} src={picture} />
       <p className="description">{description}</p>
       <h3 className="number-of-reps">{reps}</h3>
-      <button
-        className="next"
-        onClick={() => setWorkout((workout = "Burpees")) + setReps((reps = 25))}
-      >
+      <button className="next" onClick={newExercise}>
         NEXT
       </button>
     </div>
