@@ -9,7 +9,7 @@ const Exercise: React.FC = () => {
       <h1 className="workout-name">{instance.title}</h1>
       <img
         className="picture"
-        alt={instance.imageURL}
+        alt={instance.imageUrl}
         src={instance.imageUrl}
       />
       <p className="description">{instance.description}</p>
