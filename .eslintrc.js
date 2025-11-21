@@ -12,27 +12,9 @@ module.exports = {
     },
   },
   rules: {
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[vue]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "editor.formatOnSave": true,
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+    "react/react-in-jsx-scope": "off", // Not needed in React 17+
   },
   settings: {
     react: {

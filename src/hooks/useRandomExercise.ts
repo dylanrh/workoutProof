@@ -4,7 +4,7 @@ import {
   getRandomExercise,
 } from "../services/ExerciseService";
 
-export function useRandomExercise() {
+export function useRandomExercise(): [ExerciseInstance, () => void] {
   const [instance, setInstance] = useState<ExerciseInstance>(
     getRandomExercise()
   );
